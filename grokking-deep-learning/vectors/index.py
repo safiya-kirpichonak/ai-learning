@@ -5,7 +5,7 @@ def elementwise_multiplication(vector_a, vector_b):
     
     result = []
     for i in range(len(vector_a)):
-        result.push(vector_a[i] * vector_b[i])
+        result.append(vector_a[i] * vector_b[i])
     
     return result
 
@@ -17,7 +17,7 @@ def elementwise_addition(vector_a, vector_b):
     
     result = []
     for i in range(len(vector_a)):
-        result.push(vector_a[i] + vector_b[i])
+        result.append(vector_a[i] + vector_b[i])
     
     return result
 
@@ -49,4 +49,14 @@ def weight_sum(vector_a, vector_b):
     for i in range(len(vector_a)):
         result += (vector_a[i] * vector_b[i])
 
+    return result
+
+
+def number_multiplication(number, vector):
+    assert type(vector) == list, "vector must be an array"
+
+    result = []
+    for i in range(len(vector)):
+        result.append(number * vector[i])
+    
     return result
