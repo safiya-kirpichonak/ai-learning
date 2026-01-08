@@ -47,6 +47,6 @@ def weight_sum(vector_a, vector_b):
 
     result = 0
     for i in range(len(vector_a)):
-        result += vector_a[i] * vector_b[i]
+        result += (vector_a[i] * vector_b[i])
 
     return result
