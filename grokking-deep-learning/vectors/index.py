@@ -60,3 +60,16 @@ def number_multiplication(number, vector):
         result.append(number * vector[i])
     
     return result
+
+
+def vector_matrix_multiplication(vector, matrix):
+    assert type(vector) == list, "vector must be an array"
+    assert type(matrix) == list, "matrix must be an array"
+    assert len(vector) == len(matrix), "vector, matrix must be the same length"
+
+    result = []
+    for i in range(len(vector)):
+        result.append(weight_sum(vector, matrix[i]))
+
+    return result
+
