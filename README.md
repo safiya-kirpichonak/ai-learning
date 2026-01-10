@@ -1,6 +1,10 @@
 # ai-learning
 
-# Working with Python
+### Courses
+
+- [grokking-deep-learning](https://www.amazon.com/Grokking-Deep-Learning-Andrew-Trask-ebook/dp/B09782B2QH)
+
+### Working with Python
 
 ```
 # create environment
