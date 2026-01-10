@@ -1,6 +1,11 @@
 from vectors import vector_matrix_multiplication
 
-
+#         number_of_toes win_percentage number_of_fans
+#         +--------------------------------------------+
+# trauma  |     0.1      |     0.1      |    -0.3      |
+# wins    |     0.1      |     0.2      |     0.0      |
+# sadness |     0.0      |     1.3      |     0.1      |
+#         +--------------------------------------------+
 def neural_network(input):
     WEIGHTS = [[0.1, 0.1, -0.3], [0.1, 0.2, 0.0], [0.0, 1.3, 0.1]]
     return vector_matrix_multiplication(input, WEIGHTS)
@@ -14,3 +19,8 @@ for i in range(len(win_percentage)):
     input = [number_of_toes[i], win_percentage[i], number_of_fans[i]]
     prediction = neural_network(input)
     print(prediction)
+
+# First game result:
+# [0.555,  - trauma
+# 0.9800,  - wins
+# 0.9650]  - sadness
