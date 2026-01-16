@@ -25,3 +25,5 @@ for iteration in range(1101):
         weight = weight - STEP_AMOUNT
     elif(down_error > up_error):
         weight = weight + STEP_AMOUNT
+
+# 1100. Error: 1.0799505792475652e-27; Prediction: 0.7999999999999672; Weight: 1.5999999999999344.
