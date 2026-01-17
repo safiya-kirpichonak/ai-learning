@@ -9,7 +9,7 @@ INPUT = 0.5
 STEP_AMOUNT = 0.001
 
 weight = 0.5
-for iteration in range(1101):
+for iteration in range(1102):
     prediction = neural_network(INPUT, weight)
     error = calculate_error(prediction)
 
@@ -26,4 +26,4 @@ for iteration in range(1101):
     elif(down_error > up_error):
         weight = weight + STEP_AMOUNT
 
-# 1100. Error: 1.0799505792475652e-27; Prediction: 0.7999999999999672; Weight: 1.5999999999999344.
+# 1101. Error: 2.4999999996708233e-07; Prediction: 0.8004999999999671; Weight: 1.6009999999999343.
