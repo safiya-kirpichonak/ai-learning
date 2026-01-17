@@ -7,8 +7,9 @@ GOAL_PREDICTION = 0.8
 weight = 0.5
 for iteration in range(20):
     prediction = neural_network(INPUT, weight)
+    
     direct_and_amount = (prediction - GOAL_PREDICTION) * INPUT
+    
     weight =  weight - direct_and_amount
-    print(f"Prediction: {str(round(prediction, 3))}")
-
-# Prediction: 0.798
+    
+    print(f"Weight: {weight}; Prediction: {prediction}.")
