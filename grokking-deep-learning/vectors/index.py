@@ -73,3 +73,17 @@ def vector_matrix_multiplication(vector, matrix):
 
     return result
 
+def outer_product(vector_a, vector_b):
+    assert type(vector_a) == list, "vector_a must be an array"
+    assert type(vector_b) == list, "vector_b must be an array"
+
+    result = []
+    for i in range(len(vector_a)):
+       
+        row = []
+        for j in range(len(vector_b)):
+            row.append(vector_a[i] * vector_b[j])
+        
+        result.append(row)
+
+    return result

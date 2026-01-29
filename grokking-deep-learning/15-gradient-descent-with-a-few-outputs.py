@@ -4,18 +4,19 @@ from vectors import number_multiplication
 def neural_network(input, weights):
     return number_multiplication(input, weights)
 
+
 ALPHA = 0.1
 
-hurt = [0.1, 0.0, 0.0, 0.1]
-win = [1, 1, 0, 1]
-sad = [0.1, 0.0, 0.1, 0.2]
+DAMAGE = [0.1, 0.0, 0.0, 0.1]
+WIN_OR_LOSE = [1, 1, 0, 1]
+FANS_SADNESS = [0.1, 0.0, 0.1, 0.2]
 
-wlrec = [0.65, 1.0, 1.0, 0.9]
+WIN_PROBABILITY = [0.65, 1.0, 1.0, 0.9]
 
 weights = [0.3, 0.2, 0.9]
-for i in range(len(win)):
-    input = wlrec[i]
-    true = [hurt[i], win[i], sad[i]]
+for i in range(len(WIN_OR_LOSE)):
+    input = WIN_PROBABILITY[i]
+    true = [DAMAGE[i], WIN_OR_LOSE[i], FANS_SADNESS[i]]
 
     for j in range(10):
         prediction = neural_network(input, weights)
@@ -36,7 +37,3 @@ for i in range(len(win)):
         print(f"Prediction: {str(prediction)}; True: {true}\n")
     
     break
-
-
-
-        
