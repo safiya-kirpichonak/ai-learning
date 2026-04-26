@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Snake</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #00ff00;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: monospace;
+            overflow: hidden;
+        }
+        #game-board {
+            border: 2px solid #00ff00;
+            padding: 10px;
+            line-height: 1.2;
+            white-space: pre;
+        }
+        .controls {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #888;
+        }
+        .warning {
+            color: #ff0000;
+            font-size: 0.7em;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <pre id="game-board">Initializing ASCII Snake...</pre>
+    <div class="controls">Use Arrow Keys to Move</div>
+    <script src="moveSnake.js"></script>
+    <script src="checkCollisions.js"></script>
+    <script src="generateFood.js"></script>
+    <script src="updateState.js"></script>
+    <script src="drawBoard.js"></script>
+    <script src="renderState.js"></script>
+    <script src="createInitialState.js"></script>
+    <script src="runTick.js"></script>
+    <script src="handleInput.js"></script>
+    <script src="startGame.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
