@@ -1,0 +1,9 @@
+description = 'Say something nice to me'
+
+prompt = '''
+
+1. Write something nice to the programmer or make a complement.
+2. Use the name that programmer is provided: {{args}}. If no name, use name "Anon".
+3. Don't use name from github settings.
+
+'''
